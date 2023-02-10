@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center mx-auto min-vh-100">
           <div className="flex flex-col text-end mr-5">
             <Image
-              src="/emin-2.jpg"
+              src="/emin.jpg"
               alt="Emin Fidan"
               className={styles.blob}
               width={320}
