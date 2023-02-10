@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.scss'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from '@next/font/google';
+import styles from '@/styles/Home.module.scss';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -48,6 +48,7 @@ export default function Home() {
                       className={styles.social}
                       href="https://www.instagram.com/eminnfidann"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Image
                         src="/instagram-line.svg"
@@ -60,6 +61,7 @@ export default function Home() {
                       className={styles.social}
                       href="https://www.twitter.com/vuemin"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Image
                         src="/twitter-line.svg"
@@ -72,6 +74,7 @@ export default function Home() {
                       className={styles.social}
                       href="https://www.linkedin.com/in/eminfidan"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Image
                         src="/linkedin-box-line.svg"
@@ -89,6 +92,7 @@ export default function Home() {
                       className={styles.social}
                       href="https://eminfidan.medium.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Image
                         src="/medium-line.svg"
@@ -105,5 +109,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
