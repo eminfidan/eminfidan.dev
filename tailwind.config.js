@@ -81,7 +81,7 @@ module.exports = {
     },
     boxShadow: {
       sm: '0px 5px 15px 0px rgba(97, 0, 0, 0.2)',
-      md: '0px 10px 15px 0px rgba(97, 0, 0, 0.2)',
+      md: '5px 5px 15px #d1d9e6;',
       lg: '0px 10px 30px 0px rgba(97, 0, 0, 0.2)',
     },
     keyframes: {

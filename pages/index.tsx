@@ -108,6 +108,11 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <div className="absolute bottom-10 right-10">
+        <a href="cv.pdf" target="_blank" rel="noreferrer">
+          <button className="btn shadow-md p-3 rounded">Download CV</button>
+        </a>
+      </div>
     </>
   );
 }
