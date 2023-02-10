@@ -109,9 +109,11 @@ export default function Home() {
         </div>
       </main>
       <div className="absolute bottom-10 right-10">
-        <a href="cv.pdf" target="_blank" rel="noreferrer">
-          <button className="btn shadow-md p-3 rounded">Download CV</button>
-        </a>
+        <button className="btn shadow-md p-3 rounded hover:text-primary hover:transition-colors hover:duration-300">
+          <a href="cv.pdf" target="_blank" rel="noreferrer" className="p-3">
+            Download CV
+          </a>
+        </button>
       </div>
     </>
   );
