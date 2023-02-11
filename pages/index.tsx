@@ -40,7 +40,7 @@ export default function Home() {
                 systems, trying to improve and keep up to date in the software
                 field.
               </p>
-              <div className="flex mt-4">
+              <div className="flex flex-wrap mt-4">
                 <div className="flex flex-col mr-5">
                   <span className="my-2 text-16 leading-20">FIND WITH ME</span>
                   <div className="flex">
@@ -79,6 +79,19 @@ export default function Home() {
                       <Image
                         src="/linkedin-box-line.svg"
                         alt="LinkedIn"
+                        width={24}
+                        height={24}
+                      />
+                    </a>
+                    <a
+                      className={styles.social}
+                      href="https://github.com/eminfidann"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/github-fill.svg"
+                        alt="Github"
                         width={24}
                         height={24}
                       />
