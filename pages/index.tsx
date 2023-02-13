@@ -85,7 +85,7 @@ export default function Home() {
                     </a>
                     <a
                       className={styles.social}
-                      href="https://github.com/eminfidann"
+                      href="https://github.com/eminfidan"
                       target="_blank"
                       rel="noreferrer"
                     >
