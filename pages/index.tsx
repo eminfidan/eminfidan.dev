@@ -40,7 +40,7 @@ export default function Home() {
                 systems, trying to improve and keep up to date in the software
                 field.
               </p>
-              <div className="flex flex-wrap mt-4">
+              <div className="flex flex-wrap my-4">
                 <div className="flex flex-col mr-5">
                   <span className="my-2 text-16 leading-20">FIND WITH ME</span>
                   <div className="flex">
@@ -116,18 +116,34 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
+                <div className="flex flex-col">
+                  <span className="my-2 text-16 leading-20">DOWNLOAD CV</span>
+                  <div className="flex">
+                    <a
+                      className={styles.social}
+                      href="Emin Fidan - CV.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/file-line.svg"
+                        alt="Medium"
+                        width={24}
+                        height={24}
+                      />
+                    </a>
+                  </div>
+                  {/* <button className="btn shadow-md p-3 rounded hover:text-primary hover:transition-colors hover:duration-300">
+                      <a href="Emin Fidan - CV.pdf" target="_blank" rel="noreferrer" className="p-3">
+                        Download CV
+                      </a>
+                    </button> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </main>
-      <div className="absolute bottom-10 right-10">
-        <button className="btn shadow-md p-3 rounded hover:text-primary hover:transition-colors hover:duration-300">
-          <a href="cv.pdf" target="_blank" rel="noreferrer" className="p-3">
-            Download CV
-          </a>
-        </button>
-      </div>
     </>
   );
 }
