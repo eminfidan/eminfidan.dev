@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.scss';
+import { Social } from '@/components/social';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,100 +45,23 @@ export default function Home() {
                 <div className="flex flex-col mr-5">
                   <span className="my-2 text-16 leading-20">FIND WITH ME</span>
                   <div className="flex">
-                    <a
-                      className={styles.social}
-                      href="https://www.instagram.com/eminnfidann"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/instagram-line.svg"
-                        alt="Instagram"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
-                    <a
-                      className={styles.social}
-                      href="https://www.twitter.com/vuemin"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/twitter-line.svg"
-                        alt="Twitter"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
-                    <a
-                      className={styles.social}
-                      href="https://www.linkedin.com/in/eminfidan"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/linkedin-box-line.svg"
-                        alt="LinkedIn"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
-                    <a
-                      className={styles.social}
-                      href="https://github.com/eminfidan"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/github-fill.svg"
-                        alt="Github"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
+                    <Social platform="instagram" />
+                    <Social platform="twitter" />
+                    <Social platform="linkedin" />
+                    <Social platform="github" />
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <span className="my-2 text-16 leading-20">BLOG</span>
                   <div className="flex">
-                    <a
-                      className={styles.social}
-                      href="https://eminfidan.medium.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/medium-line.svg"
-                        alt="Medium"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
+                    <Social platform='medium' />
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="my-2 text-16 leading-20">DOWNLOAD CV</span>
+                  <span className="my-2 text-16 leading-20">CV</span>
                   <div className="flex">
-                    <a
-                      className={styles.social}
-                      href="Emin Fidan - CV.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/file-line.svg"
-                        alt="Medium"
-                        width={24}
-                        height={24}
-                      />
-                    </a>
+                    <Social platform='cv' />
                   </div>
-                  {/* <button className="btn shadow-md p-3 rounded hover:text-primary hover:transition-colors hover:duration-300">
-                      <a href="Emin Fidan - CV.pdf" target="_blank" rel="noreferrer" className="p-3">
-                        Download CV
-                      </a>
-                    </button> */}
                 </div>
               </div>
             </div>
