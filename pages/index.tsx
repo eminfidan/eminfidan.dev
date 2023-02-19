@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '@/styles/Home.module.scss';
 import { Social } from '@/components/social';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,13 +14,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={(inter.className, styles.main)}>
+      <main className={inter.className + ' absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'}>
         <div className="flex flex-col lg:flex-row justify-center mx-auto min-vh-100">
           <div className="flex flex-col text-end mr-5">
             <Image
               src="/emin.jpg"
               alt="Emin Fidan"
-              className={styles.blob}
+              className="animate-pulse border-8 border-neutrals-white border-opacity-5 bg-secondary bg-opacity-5 rounded-full m-auto"
               width={320}
               height={320}
               priority
@@ -54,13 +53,13 @@ export default function Home() {
                 <div className="flex flex-col">
                   <span className="my-2 text-16 leading-20">BLOG</span>
                   <div className="flex">
-                    <Social platform='medium' />
+                    <Social platform="medium" />
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <span className="my-2 text-16 leading-20">CV</span>
                   <div className="flex">
-                    <Social platform='cv' />
+                    <Social platform="cv" />
                   </div>
                 </div>
               </div>

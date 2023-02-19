@@ -17,7 +17,7 @@ module.exports = {
         DEFAULT: '#FF014F',
       },
       secondary: {
-        DEFAULT: '#4BC9F0',
+        DEFAULT: '#E71D36',
       },
       neutrals: {
         black: {
@@ -85,17 +85,23 @@ module.exports = {
       lg: '0px 10px 30px 0px rgba(97, 0, 0, 0.2)',
     },
     keyframes: {
-      'flip': {
+      'pulse': {
         '0%': {
-          'transform': 'rotateY(180deg)'
+          'transform': 'scale(0.95)',
+          'box-shadow': 'rgba(255, 255, 255, 0.05)'
+        },
+        '70%': {
+          'transform': 'scale(1)',
+          'box-shadow': 'rgba(255, 255, 255, 0.05)'
         },
         '100%': {
-          'transform': 'rotateY(-180deg)'
+          'transform': 'scale(0.95)',
+          'box-shadow': 'rgba(255, 255, 255, 0.05)'
         }
-      },
+      }
     },
     animation: {
-      'flip': 'flip 2s infinite',
+      'pulse': 'pulse 3s infinite'
     },
     container: {
       padding: {
